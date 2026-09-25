@@ -1,1 +1,1 @@
-message = Hello User
+message = Welcome User User
