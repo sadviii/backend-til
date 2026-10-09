@@ -21,7 +21,11 @@ jobs:
           pip install -r employee-api/requirements.txt
           pip install pytest httpx
 
-      - name: Run tests
+      - name: Run calculator unit tests
+        run: |
+          python -m pytest "phase-4/Automated Testing/test_calculator.py"
+
+      - name: Run employee API integration tests
         run: |
           cd employee-api
-          pytest
+          python -m pytest test_api.py
