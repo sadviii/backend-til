@@ -17,7 +17,8 @@ def test_get_employee():
 
     assert response.status_code == 200
 
- def test_employee_not_found():
+
+def test_employee_not_found():
     login_response = client.post("/login")
 
     token = login_response.json()["access_token"]
